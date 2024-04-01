@@ -28,6 +28,8 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     last_name = models.CharField(max_length=100, blank=True, null=True, default=None)
     is_active = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
+    cashback_points = models.DecimalField(max_digits=10, decimal_places=2, default=0.0)
+    is_notification_required = models.BooleanField(default=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
