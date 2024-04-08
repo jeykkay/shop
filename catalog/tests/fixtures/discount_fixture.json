@@ -1,0 +1,22 @@
+[
+{
+    "model": "catalog.discount",
+    "pk": 1,
+    "fields": {
+        "name": "1+1",
+        "percent": "50",
+        "date_start": "2024-04-08",
+        "date_end": "2024-04-22"
+    }
+},
+{
+    "model": "catalog.discount",
+    "pk": 2,
+    "fields": {
+        "name": "Seasonal discount",
+        "percent": "30",
+        "date_start": "2024-04-08",
+        "date_end": "2024-04-15"
+    }
+}
+]
