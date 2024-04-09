@@ -3,27 +3,27 @@
     "model": "catalog.product",
     "pk": 1,
     "fields": {
-        "name": "Robot vacuum cleaner",
-        "article": "1232764322",
+        "name": "iPhone15",
+        "article": "3213155546",
         "description": "Description",
         "count_on_stock": "123",
-        "price": "200.00",
+        "price": "1500.00",
         "discount": "1",
-        "category": "2",
-        "seller": "3"
+        "category": "3",
+        "seller": "1"
     }
 },
 {
     "model": "catalog.product",
     "pk": 2,
     "fields": {
-        "name": "iPhone15",
-        "article": "3213155546",
+        "name": "Engine",
+        "article": "12323656575",
         "description": "Description",
-        "count_on_stock": "123",
-        "price": "1500.00",
-        "discount": "2",
-        "category": "3",
+        "count_on_stock": "12",
+        "price": "1100.00",
+        "discount": "1",
+        "category": "4",
         "seller": "3"
     }
 },
@@ -31,28 +31,28 @@
     "model": "catalog.product",
     "pk": 3,
     "fields": {
-        "name": "Engine",
-        "article": "12323656575",
+        "name": "Washing machine",
+        "article": "1236756",
         "description": "Description",
         "count_on_stock": "12",
-        "price": "1100.00",
+        "price": "700.00",
         "discount": "2",
-        "category": "4",
-        "seller": "1"
+        "category": "1",
+        "seller": "2"
     }
 },
 {
     "model": "catalog.product",
     "pk": 4,
     "fields": {
-        "name": "Washing machine",
-        "article": "1236756",
+        "name": "Robot vacuum cleaner",
+        "article": "1232764322",
         "description": "Description",
-        "count_on_stock": "12",
-        "price": "700.00",
-        "discount": "1",
-        "category": "1",
-        "seller": "2"
+        "count_on_stock": "123",
+        "price": "200.00",
+        "discount": "2",
+        "category": "2",
+        "seller": "1"
     }
 }
 ]
