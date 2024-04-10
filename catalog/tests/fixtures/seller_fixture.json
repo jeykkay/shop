@@ -3,9 +3,9 @@
     "model": "catalog.seller",
     "pk": 1,
     "fields": {
-        "name": "Auto",
+        "name": "Electrosila",
         "description": "Description",
-        "contact": "12321-98998"
+        "contact": "3213-12323-112"
     }
 },
 {
@@ -21,9 +21,9 @@
     "model": "catalog.seller",
     "pk": 3,
     "fields": {
-        "name": "Electrosila",
+        "name": "Auto",
         "description": "Description",
-        "contact": "3213-12323-112"
+        "contact": "12321-98998"
     }
 }
 ]

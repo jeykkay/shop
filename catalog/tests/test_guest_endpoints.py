@@ -39,7 +39,7 @@ class TestGuestEndpoints(APITestCase):
 
         ]
 
-    def test_discounts_list_endpoint(self):
+    def test_discounts(self):
         url = reverse('discounts')
         response = self.client.get(url)
         assert response.status_code == 200
@@ -56,7 +56,7 @@ class TestGuestEndpoints(APITestCase):
             }
         ]
 
-    def test_sellers_list_endpoint(self):
+    def test_sellers(self):
         url = reverse('seller')
         response = self.client.get(url)
         assert response.status_code == 200
@@ -81,7 +81,7 @@ class TestGuestEndpoints(APITestCase):
             }
         ]
 
-    def test_products_endpoint(self):
+    def test_products(self):
         category = [1, 2, 3, 4]
         for category_id in category:
             url = reverse('category-products', kwargs={'category_id': category_id})
