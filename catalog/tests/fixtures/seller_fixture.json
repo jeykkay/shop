@@ -1,0 +1,29 @@
+[
+{
+    "model": "catalog.seller",
+    "pk": 1,
+    "fields": {
+        "name": "Electrosila",
+        "description": "Description",
+        "contact": "3213-12323-112"
+    }
+},
+{
+    "model": "catalog.seller",
+    "pk": 2,
+    "fields": {
+        "name": "5element",
+        "description": "Description",
+        "contact": "33-2121-66575"
+    }
+},
+{
+    "model": "catalog.seller",
+    "pk": 3,
+    "fields": {
+        "name": "Auto",
+        "description": "Description",
+        "contact": "12321-98998"
+    }
+}
+]
