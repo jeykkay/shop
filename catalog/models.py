@@ -41,7 +41,7 @@ class Promocode(models.Model):
     is_cumulative = models.BooleanField()
 
     def __str__(self):
-        return f'{self.name}'
+        return f'{self.name} - {self.percent}%'
 
 
 class Product(models.Model):
@@ -107,7 +107,7 @@ class Order(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.SET_NULL, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     total_sum = models.DecimalField(max_digits=10, decimal_places=2)
-    status = models.CharField(max_length=100, choices=STATUSES)
+    status = models.CharField(max_length=100, choices=STATUSES, default='In Process')
 
     delivery_address = models.CharField(max_length=250, null=True, blank=True)
     delivery_methods = models.CharField(choices=DELIVERY_METHODS, max_length=100, null=True, blank=True)
@@ -118,7 +118,7 @@ class Order(models.Model):
     delivery_notification_before = models.PositiveIntegerField(choices=NOTIF_TIMES, default=6)
 
     def __str__(self):
-        return f'{self.user.name} - {self.id}'
+        return f'{self.user.email} - {self.pk}'
 
 
 class OrderProducts(models.Model):

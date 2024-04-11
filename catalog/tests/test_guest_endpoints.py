@@ -43,6 +43,7 @@ class TestGuestEndpoints(APITestCase):
         url = reverse('discounts')
         response = self.client.get(url)
         assert response.status_code == 200
+        assert isinstance(response.data, list)
         assert response.data == [
             {
                 "id": 1,
@@ -60,6 +61,7 @@ class TestGuestEndpoints(APITestCase):
         url = reverse('seller')
         response = self.client.get(url)
         assert response.status_code == 200
+        assert isinstance(response.data, list)
         assert response.data == [
             {
                 "id": 1,
