@@ -117,8 +117,10 @@ class Order(models.Model):
                                       default='In Process')
     delivery_notification_before = models.PositiveIntegerField(choices=NOTIF_TIMES, default=6)
 
+    is_notif_sent = models.BooleanField(default=False)
+
     def __str__(self):
-        return f'{self.user.name} - {self.id}'
+        return f'{self.user} - {self.id}'
 
 
 class OrderProducts(models.Model):
