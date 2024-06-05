@@ -195,3 +195,8 @@ CELERY_RESULT_BACKEND = f'redis://{env("CELERY_HOST")}:{env("CELERY_PORT")}'
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 
 TELEGRAM_API_KEY = env('TELEGRAM_API_KEY')
+
+SELLERS_URL = env('SELLERS_URL')
+CART_URL = env('CART_ENDPOINT')
+AUTH_URL = env('AUTH_ENDPOINT')
+BACKEND_URL = env('BACKEND_URL')
