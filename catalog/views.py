@@ -7,6 +7,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.db.models import F
 from catalog.tasks import some_task
+from drf_yasg.utils import swagger_auto_schema
 
 
 class CategoryListView(ListAPIView):
@@ -95,10 +96,19 @@ class CartView(APIView):
 
 
 class OrderView(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = (IsAuthenticated, )
 
+    @swagger_auto_schema(
+        request_method="POST",
+        request_body=OrderSerializer,
+        responses={
+            200: OrderSerializer
+        }
+    )
     def post(self, request):
-        input_serializer = OrderSerializer(data=request.data, context={'request': request})
+        input_serializer = OrderSerializer(data=request.data,
+                                           context={'request': request})
+        print(request.data)
         input_serializer.is_valid(raise_exception=True)
         input_serializer.save()
 
