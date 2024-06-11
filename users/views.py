@@ -8,7 +8,7 @@ class TestLoginView(APIView):
     permission_classes = (IsAuthenticated,)
 
     def get(self, request):
-        return Response('Hello World!')
+        return Response('Hello')
 
 
 class ActivateUser(UserViewSet):
