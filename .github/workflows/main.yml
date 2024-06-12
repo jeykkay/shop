@@ -44,5 +44,4 @@ jobs:
 
       - name: Run Tests
         run : |
-          cd shop
-          pytest
+          pytest.ini
